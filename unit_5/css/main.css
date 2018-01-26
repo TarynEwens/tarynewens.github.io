@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #fcf1ef;
+	font-size: 16px /*1em = 16px*/
+	color: #505050;
+}
+
+h1, h2 {
+	font-family: 'Roboto', sans-serif;
+	color: #505050;
+}
+
+h3, h4, footer {
+	font-family: 'Roboto', sans-serif;
+	color: #00b8a7;
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 3em 0em 0em 0em;
+}
+
+h2 {
+	color: #505050;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+	text-align: center;
+	margin: 0em 0em 5.5em 0em;
+}
+
+h3 {
+	text-transform: lowercase;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 1.5em;
+	text-transform: lowercase;
+	text-align: center;
+	padding: 1em 1em 0.5em 1em;
+}
+
+p {
+	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.5em;
+	width:30em;
+	padding-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+	border-bottom: 1px solid #505050;
+}
+
+ul {
+	color: #505050;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-transform: capitalize;
+	text-align: right;
+	padding: 1em;
+	letter-spacing: 2px;
+
+	
+}
+
+li {
+	display: inline-block;
+	margin: 1em;
+}
+
+header {
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+    background-size: 1091px 597px;
+	
+}
+
+footer {
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+    font-size: 4em;
+	text-transform: lowercase;
+	text-align: center;
+	margin: 1.50em auto 1em auto;
+}
+
+aside {
+	background-color: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+
+    margin-bottom: 0.5em;
+    float: left;
+    display: block;
+    margin-right: 6.34921%;
+    width: 35%;
+    text-align: right;
+    clear: right;
+
+}
+
+nav {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+div {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+div.about {
+	float: right;
+	padding: 20px 200px 20px 0px;
+	clear: right;
+}
+
+img.break {
+	display: block;
+	margin: 10em auto;
+	clear: both;
+}
+
+img.quarter {
+	width: 25%;
+}
+
+img.half {
+	width: 50%;
+}
+
+img.full {
+	width: 100%;
+}
+
+img.arrow {
+	margin: 0px auto 40px auto;
+	display: block;
+}
+
+div.instafeed, div.projects {
+	display: block;
+	font-size: 0;
+	position:relative;
+	padding: 0;
+	margin: 0px auto;
+	width: 100%;
+	clear: both;
+}
+
+div.wrapper {
+	background: rgba(255,255,255,0.55);
+	margin: 1em 2.5em 1em 2.5em;
+	padding: 3em;
+	overflow: hidden;
+}
+
+#about {
+	font-size: 4em;
+}
+
+#contact {
+	font-size: 3em;
+}
+
+#resume {
+	text-transform: uppercase;
+	font-weight: 700;
+}
