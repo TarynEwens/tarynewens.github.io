@@ -142,7 +142,7 @@ img.arrow {
 	display: block;
 }
 
-div.instafeed, div.projects {
+.instafeed, .projects {
 	display: block;
 	font-size: 0;
 	position:relative;
@@ -152,11 +152,19 @@ div.instafeed, div.projects {
 	clear: both;
 }
 
-div.wrapper {
+#wrapper {
 	background: rgba(255,255,255,0.55);
 	margin: 1em 2.5em 1em 2.5em;
 	padding: 3em;
-	overflow: hidden;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 #about {
