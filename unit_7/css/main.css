@@ -288,4 +288,10 @@ img.full {
 		display:none;
 	}
 
+	#wrapper {
+		background: rgba(255,255,255,0.55);
+		margin: 10em 0em 10em 0em;
+		padding: 1em;
+	}
+
 }
