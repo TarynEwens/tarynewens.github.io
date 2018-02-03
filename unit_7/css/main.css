@@ -29,6 +29,7 @@ h3, h4, footer {
 	font-family: 'Roboto', sans-serif;
 	color: #f78167;
 	font-weight: 900;
+	text-transform: lowercase;
 }
 
 h1 {
@@ -47,16 +48,15 @@ h2 {
 }
 
 h3 {
-	text-transform: lowercase;
 	margin: 0;
 	padding: 0;
 }
 
 h4 {
 	font-size: 1.5em;
-	text-transform: lowercase;
 	text-align: center;
 	padding: 1em 1em 0.5em 1em;
+	margin:2em auto 2em auto;
 }
 
 p {
@@ -98,14 +98,13 @@ li {
 
 main {
 	max-width: 1280px;
-	margin: auto;
+	margin: 0 auto;
 }
 
 footer {
 	font-size: 4em;
-	text-transform: lowercase;
 	text-align: center;
-	margin: 1.50em auto 1em auto;
+	margin: 3em auto 1em auto;
 }
 
 aside {
@@ -126,12 +125,6 @@ div.about {
 	clear: right;
 }
 
-img.break {
-	display: block;
-	margin: 10em auto;
-	clear: both;
-}
-
 img.quarter {
 	width: 25%;
 	max-width: 320px;
@@ -145,11 +138,6 @@ img.half {
 img.full {
 	width: 100%;
 	max-width: 1280px;
-}
-
-img.arrow {
-	margin: 0em auto 2em auto;
-	display: block;
 }
 
 
@@ -166,7 +154,7 @@ img.arrow {
 
 #wrapper {
 	background: rgba(255,255,255,0.55);
-	margin: 1em 2.5em 1em 2.5em;
+	margin: 10em 2.5em 10em 2.5em;
 	padding: 3em;
 }
 
@@ -190,4 +178,113 @@ img.arrow {
 #resume {
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+
+
+@media only screen and (min-width:1800px) {
+	p {
+		font-size: 1.5em;
+	}
+
+	div#content {
+			width: 1280px;
+			margin: auto;
+		}
+
+}
+
+
+
+@media only screen and (max-width:960px){ /*When about collapses*/
+	div.about {
+		float: none;
+		padding: 1em;
+		clear: both;
+	}
+
+	aside {
+		margin-bottom: 0.5em;
+	    float: none;
+	    display: inline;
+	    width: 100%;
+	    text-align: left;
+	    clear: right;
+		}
+
+	p {
+		text-align: justify;
+		line-height: 1.5em;
+		/*width:100%;*/
+		padding-bottom: 1em;
+  		display: inline-block;
+  		width: 100%;
+	}
+
+	#about {
+		font-size: 3em;
+	}
+
+	#contact {
+		font-size: 2em;
+	}
+
+	#wrapper {
+		background: rgba(255,255,255,0.55);
+		padding: 1em;
+	}
+
+
+}
+
+@media only screen and (max-width:695px){ /*When footer collapses*/
+	footer {
+		font-size: 2em;
+	}
+
+}
+
+
+@media only screen and (max-width:620px){ /*When header collapses*/
+	h1 {
+		font-size: 3em;
+		font-weight: 900;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 3em 0em 0em 0em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		font-weight: 400;
+		text-align: center;
+		margin: 0em 0em 5.5em 0em;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	a {
+		color: #505050;
+		border-bottom: 1px solid #505050;
+		line-height: 2em;
+	}
+
+	div.projects img{
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	div.instafeed img{
+		width: 33.3333%;
+		margin: 0;
+	}
+
+	div.instafeed img:nth-of-type(n+7){
+		display:none;
+	}
+
 }
