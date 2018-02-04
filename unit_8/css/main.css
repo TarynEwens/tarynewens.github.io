@@ -83,7 +83,6 @@ ul {
 	color: #505050;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	text-transform: capitalize;
 	text-align: right;
 	padding: 1em;
 	letter-spacing: 0.3em;
@@ -93,6 +92,7 @@ ul {
 
 li {
 	display: inline-block;
+	text-transform: uppercase;
 	margin: 1em;
 }
 
@@ -142,7 +142,7 @@ img.full {
 
 
 
-.projects {
+#projects {
 	display: block;
 	font-size: 0;
 	position:relative;
@@ -158,6 +158,19 @@ img.full {
 	padding: 3em;
 }
 
+#about {
+	font-size: 4em;
+}
+
+#contact {
+	font-size: 3em;
+}
+
+#resume {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
 .imagemobile {
 	display: none;
 }
@@ -171,18 +184,10 @@ img.full {
     height: 0;
 }
 
-#about {
-	font-size: 4em;
-}
 
-#contact {
-	font-size: 3em;
-}
 
-#resume {
-	text-transform: uppercase;
-	font-weight: 700;
-}
+
+
 
 
 
@@ -197,6 +202,9 @@ img.full {
 		}
 
 }
+
+
+
 
 
 
@@ -241,12 +249,19 @@ img.full {
 
 }
 
+
+
+
+
 @media only screen and (max-width:695px){ /*When footer collapses*/
 	footer {
 		font-size: 2em;
 	}
 
 }
+
+
+
 
 
 @media only screen and (max-width:620px){ /*When header collapses*/
@@ -274,7 +289,7 @@ img.full {
 		line-height: 2em;
 	}
 
-	div.projects img{
+	div#projects img{
 		width: 100%;
 		margin: 0 auto;
 		max-width: 100%;
