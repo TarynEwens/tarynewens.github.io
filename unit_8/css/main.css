@@ -142,7 +142,7 @@ img.full {
 
 
 
-.instafeed, .projects {
+.projects {
 	display: block;
 	font-size: 0;
 	position:relative;
@@ -275,15 +275,6 @@ img.full {
 		display: inline-block;
 		margin: 0 auto;
 		max-width: 100%;
-	}
-
-	div.instafeed img{
-		width: 33.3333%;
-		margin: 0;
-	}
-
-	div.instafeed img:nth-of-type(n+7){
-		display:none;
 	}
 
 	#wrapper {
