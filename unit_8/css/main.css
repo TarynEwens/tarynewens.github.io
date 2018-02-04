@@ -158,6 +158,10 @@ img.full {
 	padding: 3em;
 }
 
+.imagemobile {
+	display: none;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -272,10 +276,17 @@ img.full {
 
 	div.projects img{
 		width: 100%;
-		display: inline-block;
 		margin: 0 auto;
 		max-width: 100%;
 	}
+
+	  .half, .quarter, .full {
+	   display: none;
+	  }
+
+	  .imagemobile{
+	   display: block;
+	  }
 
 	#wrapper {
 		background: rgba(255,255,255,0.55);
