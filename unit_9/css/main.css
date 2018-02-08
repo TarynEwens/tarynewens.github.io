@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #fcfbe9;
+	font-size: 16px /*1em = 16px*/
+	color: #35302d;
+}
+
+header {
+	background-color: #a5e2ec;
+	background-image: url(../images/transparentbackground.png);
+	background-repeat: repeat;
+    background-size: 1091px 597px;
+	
+}
+
+h1, h2 {
+	font-family: 'Roboto', sans-serif;
+	color: #505050;
+}
+
+h3, h4, footer {
+	font-family: 'Roboto', sans-serif;
+	color: #f78167;
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 3em 0em 0em 0em;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 400;
+	text-align: center;
+	margin: 0em 0em 5.5em 0em;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0;
+	margin:2em auto 2em auto;
+}
+
+p {
+	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.5em;
+	width:30em;
+	padding-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+a:hover {
+	color: #505050;
+	border-bottom: 1px solid #505050;
+}
+
+ul {
+	color: #505050;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-align: right;
+	padding: 1em;
+	letter-spacing: 0.3em;
+
+	
+}
+
+li {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 1em;
+}
+
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+footer {
+	font-size: 4em;
+	text-align: center;
+	margin: 3em auto 1em auto;
+}
+
+aside {
+	margin-bottom: 0.5em;
+    float: left;
+    display: block;
+    margin-right: 6.34921%;
+    width: 35%;
+    text-align: right;
+    clear: right;
+
+}
+
+
+div.about {
+	float: right;
+	padding: 1em 10em 1em 0em;
+	clear: right;
+}
+
+div#portfolio {
+	margin: 2.5em 2.5em 10em 2.5em;
+}
+
+
+.singleproject {
+	float: left;
+	width: 32.6666%;
+	height: 30em;
+	padding: 0;
+	margin: 1em 0.2em;
+	font-size: 16px;
+	text-align: center;
+	background: rgba(255,255,255,0.66);
+}
+
+.singleproject p {
+	text-align: justify;
+	width: 80%;
+	margin: 1em auto;
+
+}
+
+.singleproject img {
+	width: 100%;
+}
+
+.singleproject h4 {
+	color: #505050;
+	margin: 1em auto;
+	font-size: 1.3em;
+}
+
+.singleproject a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	line-height: 1.2em;
+	font-size: .8em;
+	color: #505050;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.singleproject a:hover {
+	color: #505050;
+	border-bottom: 1px solid #505050;
+}
+
+
+.wrapper {
+	background: rgba(255,255,255,0.55);
+	margin: 2.5em 2.5em 10em 2.5em;
+	padding: 3em;
+}
+
+
+
+#about {
+	font-size: 4em;
+}
+
+#contact {
+	font-size: 3em;
+}
+
+#resume {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1800px) {
+	p {
+		font-size: 1.5em;
+	}
+
+	div#content {
+			width: 1280px;
+			margin: auto;
+		}
+
+}
+
+@media only screen and (max-width:1130px){ /*When about collapses*/
+	.singleproject {
+		width: 49%;
+		max-width: 620px;
+		height: 32em;
+	}
+
+}
+
+@media only screen and (max-width:1000px){ /*When about collapses*/
+	.singleproject {
+		height: 30em;
+	}
+
+}
+
+@media only screen and (max-width:982px){ /*When about collapses*/
+	div.about {
+		float: none;
+		padding: 1em;
+		clear: both;
+	}
+
+	aside {
+		margin-bottom: 0.5em;
+	    float: none;
+	    display: inline;
+	    width: 100%;
+	    text-align: left;
+	    clear: right;
+	}
+
+	p {
+		text-align: justify;
+		line-height: 1.5em;
+		padding-bottom: 1em;
+  		display: inline-block;
+  		width: 100%;
+	}
+
+	#about {
+		font-size: 3em;
+	}
+
+	#contact {
+		font-size: 2em;
+	}
+
+	#wrapper {
+		background: rgba(255,255,255,0.55);
+		padding: 1em;
+	}
+
+	.singleproject a {
+		margin: 1em auto;
+		
+	}
+
+}
+
+@media only screen and (max-width:850px){ /*When footer collapses*/
+	.singleproject {
+		height: 28em;
+	}
+
+}
+
+@media only screen and (max-width:812px){ /*When footer collapses*/
+	.singleproject {
+		width: 98%;
+		max-width: 620px;
+		height: 37em;
+	}
+
+}
+
+
+@media only screen and (max-width:695px){ /*When footer collapses*/
+	footer {
+		font-size: 2em;
+	}
+
+	.singleproject {
+		width: 98%;
+		max-width: 620px;
+		height: 35em;
+	}
+}
+
+
+
+
+
+@media only screen and (max-width:623px){ /*When header collapses*/
+	body {
+		font-size: 10px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	ul {
+		text-align: center;
+		font-weight: 800;
+		font-size: 2em;
+	}
+
+	li:nth-of-type(1){
+		display: none;
+	}
+
+	a {
+		color: #505050;
+		border-bottom: 1px solid #505050;
+		line-height: 2em;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	.singleproject {
+		height: 32em;
+	}
+
+	.wrapper {
+		background: rgba(255,255,255,0.55);
+		margin: 10em 0 10em 0;
+		padding: 1em;
+	}
+
+}
