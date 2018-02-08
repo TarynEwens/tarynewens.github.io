@@ -7,16 +7,16 @@
 }
 
 body {
-	background: #fcfbe9;
+	background: #fff5f4;
 	font-size: 16px /*1em = 16px*/
 	color: #35302d;
 }
 
 header {
 	background-color: #a5e2ec;
-	background-image: url(../images/transparentbackground.png);
+	background-image: url(../images/confetti_background5.png);
 	background-repeat: repeat;
-    background-size: 1091px 597px;
+/*    background-size: 1091px 597px;*/
 	
 }
 
@@ -81,19 +81,31 @@ a:hover {
 ul {
 	color: #505050;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	text-align: right;
+	font-weight: 700;
 	padding: 1em;
 	letter-spacing: 0.3em;
+	text-align: right;
 
 	
 }
 
 li {
-	display: inline-block;
+	display: block;
 	text-transform: uppercase;
 	margin: 1em;
+	text-align: right;
 }
+
+li p {
+	color: #505050;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-align: right;
+	display: inline-block;
+	width: auto;
+	margin: 0 0 0 1em;
+}
+
 
 main {
 	max-width: 1280px;
@@ -296,6 +308,24 @@ div#portfolio {
 		height: 37em;
 	}
 
+	ul {
+		text-align: center;
+		font-weight: 800;
+		font-size: 1em;
+	}
+
+		li {
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 1em;
+		text-align: center;
+		border-bottom: 1px solid #505050;
+	}
+
+	li p {
+		display: none;
+	}
+
 }
 
 
@@ -336,16 +366,12 @@ div#portfolio {
 
 	a {
 		color: #505050;
-		border-bottom: 1px solid #505050;
+
 		line-height: 2em;
 	}
 
 	h4 {
 		font-size: 16px;
-	}
-
-	.singleproject {
-		height: 32em;
 	}
 
 	.wrapper {
