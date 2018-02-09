@@ -140,6 +140,10 @@ div#portfolio {
 	margin: 2.5em 2.5em 10em 2.5em;
 }
 
+aside h3 {
+	font-size: 4em;
+}
+
 
 .singleproject {
 	float: left;
@@ -193,15 +197,13 @@ div#portfolio {
 
 
 
-#about {
-	font-size: 4em;
-}
 
-#contact {
+
+.contact {
 	font-size: 3em;
 }
 
-#resume {
+.resume {
 	text-transform: uppercase;
 	font-weight: 700;
 }
