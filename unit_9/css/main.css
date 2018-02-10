@@ -179,6 +179,7 @@ div.after p {
 
 .singleproject img {
 	width: 100%;
+	display: block;
 }
 
 .singleproject h4 {
