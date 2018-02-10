@@ -1,21 +1,29 @@
 	<!DOCTYPE html>
 <html>
-
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>Taryn Ewens - Web Development Student</title>
-
+	<script src="other/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--[if lt IE 9]>
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
 
+    <script type="text/javascript">
+    	
+		$(window).scroll(function(){
+		    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+		  });
+
+		/*win.scroll(function(){
+		  scrollPosition = win.scrollTop();
+		  scrollRatio = 1 - scrollPosition / 300;
+		  $(".top").css("opacity", scrollRatio);
+		*/
+    </script>
 </head>
 
-
 <body>
-
 	<div id="content">
 		<header>
 			<nav>
@@ -25,98 +33,102 @@
 				</ul>
 			</nav>
 
-
-
-			<h1>Taryn Ewens,</h1>
-			<h2>web development student.</h2>
+			<div class="top">
+				<h1>Taryn Ewens,</h1>
+				<h2>web development student.</h2>
+			</div>
 
 			<BR>
 		</header>
 
-
-
-
 		<main>
-
 			<div>
 				<h4>Featured Projects</h4>
 			</div>
-			
-
-
-
 			<div id="portfolio" class="wrapper clearfix">	
 				<div class="singleproject">
-				<img src="images/projectplaceholder1.png" alt="portfolio placeholder" title="Portfolio placeholder">	
+					<div class="image-container">
+						<a href="#"><img src="images/projectplaceholder1.png" alt="portfolio placeholder" title="Portfolio placeholder"></a>
+							<div class="after"><h4>Project Name</h4>
+							<p>Click to view.</p></div>
+					</div>
 					<h4>Project Name</h4>			
 					<p>A short description of the project will go here.</p>
 					<BR><a href="#">View project</a>
 				</div>	
-
-	        	<div class="singleproject">
-	        		<img src="images/projectplaceholder2.png" alt="portfolio placeholder" title="Portfolio placeholder">
-	        		<h4>Project Name</h4>			
-					<p>A short description of the project will go here.</p>
-					<BR><a href="#">View project</a>
-	        	</div>
-
-	        	<div class="singleproject">
-	        		<img src="images/projectplaceholder3.png" alt="portfolio placeholder" title="Portfolio placeholder">
-	        		<h4>Project Name</h4>	      
-					<p>A short description of the project will go here. Testing testing testing testing testing.</p>
-					<BR><a href="#">View project</a>
-				</div>
 
 				<div class="singleproject">
-				<img src="images/projectplaceholder4.png" alt="portfolio placeholder" title="Portfolio placeholder">	
+					<div class="image-container">
+						<a href="#"><img src="images/projectplaceholder2.png" alt="portfolio placeholder" title="Portfolio placeholder"></a>
+							<div class="after"><h4>Project Name</h4>
+							<p>Click to view.</p></div>
+					</div>
 					<h4>Project Name</h4>			
 					<p>A short description of the project will go here.</p>
 					<BR><a href="#">View project</a>
 				</div>	
 
-	        	<div class="singleproject">
-	        		<img src="images/projectplaceholder5.png" alt="portfolio placeholder" title="Portfolio placeholder">
-	        		<h4>Project Name</h4>			
-					<p>A short description of the project will go here. testing testing testing testing testing testing.</p> 
+				<div class="singleproject">
+					<div class="image-container">
+						<a href="#"><img src="images/projectplaceholder3.png" alt="portfolio placeholder" title="Portfolio placeholder"></a>
+							<div class="after"><h4>Project Name</h4>
+							<p>Click to view.</p></div>
+					</div>
+					<h4>Project Name</h4>			
+					<p>A short description of the project will go here.</p>
 					<BR><a href="#">View project</a>
-	        	</div>
+				</div>	
 
-	        	<div class="singleproject">
-	        		<img src="images/projectplaceholder6.png" alt="portfolio placeholder" title="Portfolio placeholder">
-	        		<h4>Project Name</h4>	      
-					<p>A short description of the project will go here. Length is variable and should stay responsive.</p>
+				<div class="singleproject">
+					<div class="image-container">
+						<a href="#"><img src="images/projectplaceholder4.png" alt="portfolio placeholder" title="Portfolio placeholder"></a>
+							<div class="after"><h4>Project Name</h4>
+							<p>Click to view.</p></div>
+					</div>
+					<h4>Project Name</h4>			
+					<p>A short description of the project will go here.</p>
 					<BR><a href="#">View project</a>
-				</div>
+				</div>	
+
+				<div class="singleproject">
+					<div class="image-container">
+						<a href="#"><img src="images/projectplaceholder5.png" alt="portfolio placeholder" title="Portfolio placeholder"></a>
+							<div class="after"><h4>Project Name</h4>
+							<p>Click to view.</p></div>
+					</div>
+					<h4>Project Name</h4>			
+					<p>A short description of the project will go here.</p>
+					<BR><a href="#">View project</a>
+				</div>	
+
+				<div class="singleproject">
+					<div class="image-container">
+						<a href="#"><img src="images/projectplaceholder6.png" alt="portfolio placeholder" title="Portfolio placeholder"></a>
+							<div class="after"><h4>Project Name</h4>
+							<p>Click to view.</p></div>
+					</div>
+					<h4>Project Name</h4>			
+					<p>A short description of the project will go here.</p>
+					<BR><a href="#">View project</a>
+				</div>	
 			</div>
 
-
-
-
 			<div class="wrapper clearfix">
-				
 				<aside>
 					<h3 id="aboutheading">About me</h3>
 				</aside>
-
 				<div class=about>
 					<p>After a successful 5 years focused on the confectionery industry, the decision was made to hang up my apron and leave the kitchen for a career change!</p>
-
 					<p>I am a current student of the Web Development Immersive program at General Assembly, pursuing opportunities in Sydney, Australia. </p>
-
 					<p>An interest in web development began as a child when I taught myself to code basic HTML and CSS in the early 2000's, and continued to exist as a side hobby until now. </p>
-
 					<p>After seeking a creative change, 2018 brings a fresh start as I focus completely on developing my skills as a full stack developer.</p>
-
 					<p>Starting the full time Web Development Immersive bootcamp at General Assembly in February, to graduate in May 2018.</p>
 					</p><BR><BR>
 					<p><a href="other/TarynEwens_Resume.pdf" class="resume"a target="_blank">Download Resume (PDF)</a></p>
 				</div>
-				
-
 				<aside>
 					<h3 class="contact">Contact</h3>
 				</aside>
-
 				<div class="about">
 					<p><a href="mailto:taryn@sugarpush.com.au">taryn@sugarpush.com.au</a><BR>
 					<a href="https://www.instagram.com/tarynewens/" target="_blank">Instagram</a> &#124; 
@@ -125,13 +137,7 @@
 					<a href="https://www.linkedin.com/in/taryn-ewens-95a41a65/">LinkedIn</a>
 					</p>
 				</div>
-				
-
 			</div>
-
-
-
-		
 
 			<div class="instafeed"
 			<!-- SnapWidget -->
@@ -139,20 +145,11 @@
 			<iframe src="https://snapwidget.com/embed/503888" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 			</div>
  
-
 		</main>
-
-
-
-
 		<footer>
-
 			<a href="#"><h3>Take it from the top.</h3></a>
-
 		</footer>
-
 	</div>
-
 
 </body>
 </html>
