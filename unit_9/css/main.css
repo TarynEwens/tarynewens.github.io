@@ -215,6 +215,8 @@ div.after p {
     height: 100%;
     opacity: 0;
     color: #FFF;
+    -webkit-transition: background .5s, opacity 1s; /* Safari */
+    transition: background .5s, opacity 1s;
 
 }
 
