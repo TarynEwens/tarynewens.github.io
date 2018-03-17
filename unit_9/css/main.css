@@ -14,14 +14,15 @@ body {
 
 header {
 	background-color: #a5e2ec;
-	background-image: url(../images/confetti_background5.png);
+	background-image: url(../images/01.png);
 	background-repeat: repeat;
-	
+
 }
 
 h1, h2 {
 	font-family: 'Roboto', sans-serif;
 	color: #505050;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 h3, h4, footer {
@@ -36,6 +37,7 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	margin: 2em 0em 0em 0em;
+
 }
 
 h2 {
@@ -58,7 +60,7 @@ h4 {
 }
 
 p {
-	
+
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	text-align: justify;
@@ -116,19 +118,18 @@ footer {
 
 aside {
 	margin-bottom: 0.5em;
-    float: left;
-    display: block;
-    margin-right: 6.34921%;
-    width: 35%;
-    text-align: right;
-    clear: right;
+  margin-right: 6.34921%;
+  width: 35%;
+	display: inline-block;
+  text-align: right;
+	vertical-align: top;
 
 }
 
-div.about {
-	float: right;
+.about {
 	padding: 1em 10em 1em 0em;
-	clear: right;
+	width: 40%;
+	display: inline-block;
 }
 
 div#portfolio {
@@ -137,10 +138,6 @@ div#portfolio {
 
 aside h3 {
 	font-size: 4em;
-}
-
-div.projectimg {
-
 }
 
 div.after h4 {
@@ -160,20 +157,22 @@ div.after p {
 }
 
 .singleproject {
-	float: left;
-	width: 32.6666%;
+	width: 32%;
 	height: 30em;
 	padding: 0;
-	margin: 1em 0.2em;
+	margin: 0.5em 0.2em;
 	font-size: 16px;
 	text-align: center;
 	background: rgba(255,255,255,0.66);
+	display: inline-block;
+	overflow: hidden;
 }
 
 .singleproject p {
 	text-align: justify;
 	width: 80%;
 	margin: 1em auto;
+	padding: 0;
 
 }
 
@@ -241,15 +240,6 @@ div.after p {
 	font-weight: 700;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
 
 
 
@@ -264,42 +254,65 @@ div.after p {
 		}
 }
 
-@media only screen and (max-width:1130px){ /*When about collapses*/
+@media only screen and (max-width:1130px){ /*When projects collapse*/
 	.singleproject {
 		width: 49%;
 		max-width: 620px;
-		height: 32em;
+		height: 33em;
 	}
 }
 
-@media only screen and (max-width:1000px){ /*When about collapses*/
+@media only screen and (max-width:1056px){ /*When projects collapse again*/
+	main {
+		width: 100%;
+		margin: 1em auto;
+		display: block;
+	}
+
+	.about {
+		width: 90%;
+		display: block;
+		margin: 1em;
+	}
+
+	.about p {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:1012px){ /*When projects collapse again*/
 	.singleproject {
-		height: 30em;
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		padding: 3em;
+		margin: 10px auto;
+	}
+
+	.singleproject a {
+		margin: 0 auto 2em;
 	}
 }
 
 @media only screen and (max-width:982px){ /*When about collapses*/
 	div.about {
-		float: none;
 		padding: 1em;
-		clear: both;
 	}
 
 	aside {
 		margin-bottom: 0.5em;
-	    float: none;
-	    display: inline;
-	    width: 100%;
-	    text-align: left;
-	    clear: right;
+	  display: inline;
+	  width: 100%;
+	  text-align: left;
 	}
 
 	p {
 		text-align: justify;
 		line-height: 1.5em;
 		padding-bottom: 1em;
-  		display: inline-block;
-  		width: 100%;
+  	display: inline-block;
+  	width: 100%;
 	}
 
 	#about {
@@ -320,11 +333,8 @@ div.after p {
 	}
 }
 
-@media only screen and (max-width:850px){ /*When footer collapses*/
-	.singleproject {
-		height: 28em;
-	}
-}
+
+
 
 @media only screen and (max-width:812px){ /*When footer collapses*/
 	.singleproject {
@@ -385,6 +395,16 @@ div.after p {
 
 	h4 {
 		font-size: 16px;
+	}
+
+	main {
+		width: 100%;
+		margin: 0;
+	}
+
+	.singleproject {
+		padding: 0;
+		margin: 1em auto;
 	}
 
 	.wrapper {
