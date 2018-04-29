@@ -5,12 +5,12 @@ console.log("I also really like to chat about dogs, so if you have a dog or even
 
 $(document).ready( function() {
 $(window).scroll(function(){
-    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+    $(".text-box").css("opacity", 1 - $(window).scrollTop() / 250);
   });
 
-  new TypeIt('h1', {
+  new TypeIt('.heading-primary-sub', {
      strings: 'This is a simple string.',
-     speed: 150,
+     speed: 100,
      autoStart: false
 });
 });

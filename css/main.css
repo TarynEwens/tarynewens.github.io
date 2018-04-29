@@ -7,46 +7,42 @@
 }
 
 body {
-	background: #fff5f4;
-	font-size: 16px /*1em = 16px*/
+	background: #fff4f5;
+	font-size: 16px; /*1em = 16px*/
 	color: #35302d;
 }
 
 header {
 	background-color: #a5e2ec;
-	background-image: url(../images/01.png);
-	/* height: 95vh; */
-  background-size: cover;
-  background-position: top;
+	background-image: url(../images/baking_littlebitheart_pattern1.jpg);
+	height: 85vh;
+  /* background-size: cover; */
+  /* background-position: top; */
 
 }
 
 h1, h2 {
 	font-family: 'Roboto', sans-serif;
 	color: #505050;
-	background-color: rgba(255, 255, 255, 0.5);
 }
 
 h3, h4, footer {
 	font-family: 'Roboto', sans-serif;
-	color: #f78167;
+	color: #6cc5c7;
 	font-weight: 900;
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 5em;
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 2em 0em 0em 0em;
-
 }
 
 h2 {
 	font-size: 3em;
 	font-weight: 400;
 	text-align: center;
-	margin: 0em 0em 5.5em 0em;
 }
 
 h3 {
@@ -158,16 +154,12 @@ div.after p {
 	text-align: center;
 }
 
-#funfact {
+span#funfact h4 {
 	width: 100%;
-}
-
-#funfact h4 {
-	width:30em;
-	margin: 0;
 	padding: 1em 0;
 	font-weight: 700;
-	font-size: 1em;
+	margin: 0 auto;
+	font-size: 1.5em;
 }
 
 .singleproject {
@@ -256,6 +248,113 @@ div.after p {
 
 
 
+nav {
+	display: flex;
+	background-color: #fff4f5;
+	justify-content: flex-end;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+nav a {
+	display: inline-block;
+
+}
+
+div.text-box {
+	background-color: #fdf7f8;
+}
+
+.hidden {
+	display: none;
+}
+
+.heading-primary {
+	margin-top: 18%;
+	padding: 0.4em 0.1em;
+}
+
+.heading-primary-main {
+  display: block;
+  letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 6px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.icons {
+margin: 1em .2em 1em .2em;
+}
+
+.bowl {
+	animation-name: dancebowl;
+	animation-duration: 4s;
+	animation-iteration-count: 100;
+}
+
+.spoon {
+transform: rotate(175deg);
+animation-name: dancespoon;
+animation-duration: 4s;
+animation-iteration-count: 100;
+}
+
+.measuring {
+transform: scaleX(-1);
+animation-name: dance;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+@keyframes dancebowl {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+	50% {
+		transform: rotate(15deg);
+	}
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes dancespoon {
+  0% {
+    transform: rotate(15deg);
+  }
+
+	50% {
+		transform: rotate(-15deg);
+	}
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: rotate(45deg);
+  }
+
+	50% {
+		transform: rotate(-45deg);
+	}
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
 
 @media only screen and (min-width:1800px) {
 	p {
@@ -329,6 +428,7 @@ div.after p {
   	width: 100%;
 	}
 
+
 	#about {
 		font-size: 3em;
 	}
@@ -377,10 +477,11 @@ div.after p {
 }
 
 
-@media only screen and (max-width:695px){ /*When footer collapses*/
+@media only screen and (max-width:695px){ /*When footer and funfact collapses*/
 	footer {
 		font-size: 2em;
 	}
+
 
 @media only screen and (max-width:623px){ /*When header collapses*/
 	body {
@@ -390,6 +491,8 @@ div.after p {
 	p {
 		font-size: 16px;
 	}
+
+
 
 	ul {
 		text-align: center;
@@ -408,7 +511,9 @@ div.after p {
 	}
 
 	h4 {
-		font-size: 16px;
+		font-size: 1.5em;
+		width: 100%;
+		margin-top: 2em;
 	}
 
 	main {
@@ -427,4 +532,30 @@ div.after p {
 		padding: 1em;
 	}
 
+}
+
+@media only screen and (max-width:475px){ /*When header collapses again*/
+
+	.heading-primary-main {
+	  letter-spacing: 5px;
+	}
+
+	.heading-primary-sub {
+	  font-size: 16px;
+	  letter-spacing: 6px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+
+}
+
+@media only screen and (max-width:380px) {
+	ul {
+		font-size: 1.5em;
+	}
+
+	nav {
+		justify-content: center;
+	}
 }
