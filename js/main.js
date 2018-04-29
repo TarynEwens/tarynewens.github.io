@@ -12,5 +12,6 @@ $(window).scroll(function(){
      strings: 'This is a simple string.',
      speed: 100,
      autoStart: false
-});
+  });
+
 });
