@@ -11,11 +11,13 @@
 	  gtag('config', 'UA-116364128-1');
 	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Taryn Ewens - Web Development Student</title>
+	<title>Taryn Ewens - Web Developer & Creative in Sydney, Australia</title>
+	<link rel=”shortcut icon” type=”image/x-icon” href=”favicon.ico”>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/typeit.min.js"></script>
 	<script src="js/main.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 <body>
@@ -25,15 +27,11 @@
 
 		<header>
 			<nav>
-				<input type="checkbox" id="nav" class="hidden"/>
-				<label for="nav" class="nav-open"><i></i><i></i><i></i></label>
-				<div class="nav-container">
 					<ul>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#aboutheading">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</div>
 			</nav>
 			<div class="text-box">
           <h1 class="heading-primary">
@@ -41,7 +39,9 @@
             <span class="heading-primary-sub">web developer and creative in Sydney, Australia</span>
           </h1>
 			</div>
-			<BR>
+			<div class="button-container">
+			  <a href="#contact" class="btn btn-white btn-animated"><span>Contact me</span></a>
+			</div>
 		</header>
 
 		<main>
@@ -49,74 +49,145 @@
 				<h4>Featured Projects</h4>
 			</div>
 			<div id="portfolio" class="wrapper clearfix">
+
 				<div class="singleproject">
-					<a href="https://github.com/tarynelise/project0" target="_blank"><div class="image-container">
-						<img src="images/tictactoe_javascript.png" alt="Tic Tac Toe Javascript Project" title="Tic Tac Toe Javascript Project">
-							<div class="after"><h4>Tic Tac Toe</h4>
-							<p>Click to view.</p></div>
-					</div></a>
-					<h4>Tic Tac Toe</h4>
-					<p>My first major project of my bootcamp, a simple tic tac toe game. Built with Javascript (including jQuery), HTML & CSS - plus a few different logic attempts!</p>
-					<BR><a href="https://github.com/tarynelise/project0" target="_blank">View project</a>
+					<div class="project-img">
+						<a href="https://github.com/mradinoff/EarBuddies-Front" target="_blank">
+							<div class="image-container">
+							<img src="images/earbuddies_react_rubyonrails.png" alt="EarBuddies - A social media built in React.js and Ruby on Rails" title="EarBuddies - A social media built in React.js and Ruby on Rails"></a>
+							</div>
+					</div>
+					<div class="project-txt">
+						<h4>"EarBuddies"</h4>
+						<p>A group project where we created a social media platform allowing users to find events, live chat with others attending, see who's attending and "match" with a friend. Third project of my web development bootcamp. </p>
+						<h5>Technologies used:</h5>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>React.js</li>
+								<li>Ruby on Rails</li>
+								<li>Bootstrap</li>
+							</ul>
+						<a href="https://github.com/mradinoff/EarBuddies-Front" target="_blank">Github</a> | <a href="https://earbuddies-react.herokuapp.com/" target="_blank">Live Demo</a>
+					</div>
 				</div>
 
 				<div class="singleproject">
-					<a href="https://github.com/tarynelise/project1" target="_blank"><div class="image-container">
-						<img src="images/woofer_rubyonrails.png" alt="Twitter for Dogs Ruby on Rails Project" title="Twitter for Dogs Ruby on Rails Project">
-							<div class="after"><h4>WOOFER</h4>
-							<p>Click to view.</p></div>
-					</div></a>
-					<h4>"WOOFER"</h4>
-					<p>It's like Twitter... for dogs! Developed using Ruby on Rails. Hoping to add more functionality soon and fix some glitches, such as the navigation which is not perfect on mobile devices.</p>
-					<BR><a href="https://github.com/tarynelise/project1" target="_blank">View project</a>
+					<div class="project-img">
+						<a href="https://github.com/tarynelise/project1" target="_blank">
+							<div class="image-container">
+								<img src="images/woofer_rubyonrails.png" alt="Twitter for Dogs Ruby on Rails Project" title="Twitter for Dogs Ruby on Rails Project"></a>
+							</div>
+					</div>
+					<div class="project-txt">
+						<h4>"WOOFER"</h4>
+						<p>It's like Twitter... for dogs! Hoping to add more functionality soon and fix some glitches, such as the navigation which is not perfect on mobile devices. Second project of my web development bootcamp.</p>
+						<h5>Technologies used:</h5>
+							<ul>
+								<li>HTML</li>
+								<li>CSS (Sass)</li>
+								<li>Ruby on Rails</li>
+								<li>Bootstrap</li>
+							</ul>
+							<a href="https://github.com/tarynelise/project1" target="_blank">Github</a> | <a href="https://wooferproject.herokuapp.com/" target="_blank">Live Demo</a>
+						</div>
 				</div>
 
-				<div class="singleproject">
-					<a href="https://github.com/mradinoff/EarBuddies-Front" target="_blank"><div class="image-container">
-						<img src="images/earbuddies_react_rubyonrails.png" alt="EarBuddies - A social media built in React and Ruby on Rails" title="EarBuddies - A social media built in React and Ruby on Rails">
-							<div class="after"><h4>EarBuddies</h4>
-							<p>Click to view.</p></div>
-					</div></a>
-					<h4>"EarBuddies"</h4>
-					<p>A group project where we created a social media platform allowing users to find events, see who's attending and "match" with a friend. Back end in Ruby on Rails and front end in React.</p>
-					<BR><a href="https://github.com/mradinoff/EarBuddies-Front" target="_blank">View project</a>
-				</div>
 
 				<div class="singleproject">
-					<a href="#"><div class="image-container">
-						<img src="images/projectplaceholder4.png" alt="portfolio placeholder" title="Portfolio placeholder">
-							<div class="after"><h4>GA Final Project coming soon</h4>
-							<p>Click to view.</p></div>
-					</div></a>
-					<h4>GA Final Project coming soon</h4>
-					<p>Arriving May 2018.</p>
-					<BR><a href="#">View project</a>
+					<div class="project-img">
+						<a href="https://github.com/tarynelise/project0" target="_blank">
+						<div class="image-container">
+							<img src="images/tictactoe_javascript.png" alt="Tic Tac Toe Javascript Project" title="Tic Tac Toe Javascript Project"></a>
+						</div>
+					</div>
+					<div class="project-txt">
+						<h4>Tic Tac Toe</h4>
+						<p>My first major project of my bootcamp, a simple tic tac toe game which took about 4 attempts until I felt the logic was right!</p>
+							<h5>Technologies used:</h5>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+									<li>jQuery</li>
+								</ul>
+						<a href="https://github.com/tarynelise/project0" target="_blank">Github</a> | <a href="https://tarynelise.github.io/project0/" target="_blank">Live Demo</a>
+					</div>
+				</div>
+
+
+
+			</div>
+
+			<div class="wrapper">
+
+				<div class="about">
+
+					<div class="left">
+						<h3 id="aboutheading">About me</h3>
+					</div>
+
+					<div class="text">
+						<span id="funfact"><h4>Fun Fact: I taught myself to write HTML when I was about 10 years old, so I could build websites about my virtual "dogz"!</h4></span>
+						<p>It wasn't until I'd spent a number of years working in office administration, and then another few years as a pastry chef making handmade confectionery, that I decided to pull my passion for creating websites from side hobby status to the forefront. </p>
+
+						<p>After hanging up my apron, I joined General Assembly's full time Web Development Immersive bootcamp, and quickly discovered that learning to code was actually similar to learning a recipe. If you combine the right "ingredients" in the correct way, success! Otherwise, you might end up with a cake wreck on your hands.</p>
+
+						<p>Inspired by beautiful and quirky designs, I am seeking opportunities in Sydney, within a highly creative team who value openness and collaboration.</p>
+
+						<BR/>
+						<p>If you haven't already, you will quickly discover that fluffy dogs are my all-time favourite thing and yes, I would very much like to show you photos of my furbaby.</p><BR><BR>
+						<p><a href="other/TarynEwens_Resume.pdf" class="resume"a target="_blank">Download Resume (PDF)</a></p>
 				</div>
 			</div>
 
-			<div class="wrapper clearfix">
-
-
-
-				<aside>
-					<h3 id="aboutheading">About me</h3>
-				</aside>
-				<div class="about">
-					<span id="funfact"><h4>Fun Fact: I taught myself to write HTML when I was about 10 years old, so I could build websites about my virtual "dogz"!</h4></span>
-					<p>It wasn't until I'd spent a number of years working in office administration, and then another few years as a pastry chef making handmade confectionery, that I decided to pull my passion for creating websites from side hobby status to the forefront. </p>
-
-					<p>After hanging up my apron, I joined General Assembly's full time Web Development Immersive bootcamp, and quickly discovered that learning to code was actually similar to learning a recipe. If you combine the right "ingredients" in the correct way, success! Otherwise, you might end up with a cake wreck on your hands.</p>
-
-					<p>Inspired by beautiful and quirky designs, I am seeking opportunities in Sydney, within a highly creative team who value openness and collaboration.</p>
-
-					<BR/>
-					<p>If you haven't already, you will quickly discover that fluffy dogs are my all-time favourite thing and yes, I would very much like to show you photos of my furbaby.</p><BR><BR>
-					<p><a href="other/TarynEwens_Resume.pdf" class="resume"a target="_blank">Download Resume (PDF)</a></p>
+			<div class="about">
+				<h3>Skills</h3>
+				<div class="skills text">
+					<div class="skills-list">
+						<h5>Front End</h5>
+						<ul>
+							<li>HTML</li>
+							<li>CSS / SCSS</li>
+							<li>Bootstrap</li>
+							<li>Javascript</li>
+							<li>React.js</li>
+							<li>jQuery</li>
+							<li>Underscore.js</li>
+						</ul>
+					</div>
+					<div class="skills-list">
+						<h5>Back End</h5>
+						<ul>
+							<li>Ruby</li>
+							<li>Ruby on Rails</li>
+							<li>SQL</li>
+							<li>PostgresSQL</li>
+							<li>Ajax</li>
+						</ul>
+					</div>
+					<div class="skills-list">
+					<h5>Other</h5>
+						<ul>
+							<li>Git</li>
+							<li>Photoshop</li>
+						</ul>
+					</div>
 				</div>
-				<aside>
-					<h3 id="contact">Contact</h3>
-				</aside>
-				<div class="about">
+			</div>
+
+			<div class="about">
+				<h3>Interests</h3>
+				<div class="text">
+					<p>Right now I'm focused on gaining more experience in React.js, as well as learning Node.js.</p>
+					<p>Aside from that, I'm immensely excited by learning how to create HTML & Javascript based games, and am hoping to soon start experimenting with creating images using CSS.</p>
+					<p>Having had a brief introduction to Vue.js, I am interested in exploring this framework further as I feel it could be a simpler solution than React.js for smaller projects.</p>
+				</div>
+			</div>
+
+			<div class="about" id="contact">
+				<h3>Contact</h3>
+				<div class="text">
 					<p><a href="mailto:taryn@taryn.codes">taryn@taryn.codes</a><BR>
 					<a href="https://www.instagram.com/tarynewens/" target="_blank">Instagram</a> &#124;
 					<a href="https://twitter.com/tarynewens" target="_blank">Twitter</a>  &#124;
@@ -124,6 +195,9 @@
 					<a href="https://www.linkedin.com/in/taryn-ewens-95a41a65/" target="_blank">LinkedIn</a>
 					</p>
 				</div>
+			</div>
+
+
 			</div>
 
 			<div class="instafeed"
@@ -139,9 +213,9 @@
 			<img src="images/bowl.png" alt="mixing bowl graphic" title="mixing bowl graphic" class="icons bowl"/>
 			<img src="images/measuringspoons.png" alt="measuring spoons graphic" title="measuring spoons graphic" class="icons measuring"/>
 		</footer>
-		</div>
+	</div>
 
-		<!-- Default Statcounter code for Taryn.codes
+	<!-- Default Statcounter code for Taryn.codes
 	http://taryn.codes -->
 	<script type="text/javascript">
 	var sc_project=11666152;
