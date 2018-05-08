@@ -336,6 +336,14 @@ div.text-box {
 	border-bottom: 1px solid #505050;
 }
 
+.assistive-text {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+}
+
 /* About */
 
 span.email a {
