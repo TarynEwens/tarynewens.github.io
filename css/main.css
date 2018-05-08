@@ -12,6 +12,25 @@ body {
 	color: #35302d;
 }
 
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+footer {
+	font-size: 3em;
+	text-align: center;
+	margin: 2em auto 1em auto;
+}
+
+.wrapper {
+	background: rgba(255,255,255,0.55);
+	margin: 2.5em 2.5em 10em 2.5em;
+	padding: 3em;
+}
+
+/* Text Styles  */
+
 header {
 	background-color: #fff4f5;
 	background-image: url(../images/baking_littlebitheart_pattern1.png);
@@ -67,6 +86,14 @@ a:hover {
 	/* border-bottom: 1px solid #505050; */
 }
 
+span#funfact h4 {
+	padding: .4em 0;
+	margin: 0 auto 1em auto;
+}
+
+
+/* List Styles */
+
 ul {
 	color: #505050;
 	font-family: 'Raleway', sans-serif;
@@ -82,115 +109,6 @@ li {
 	font-weight: 300;
 	text-transform: none;
 	letter-spacing: 0.1em;
-}
-
-main {
-	max-width: 1280px;
-	margin: 0 auto;
-}
-
-footer {
-	font-size: 3em;
-	text-align: center;
-	margin: 2em auto 1em auto;
-}
-
-.about {
-	padding: 2em;
-	width: 65%;
-	display: block;
-	margin: 0 auto;
-}
-
-
-.wrapper h3 {
-	font-size: 3em;
-	display: inline-block;
-	margin: 1em auto;
-}
-
-span#funfact h4 {
-	padding: .4em 0;
-	margin: 0 auto 1em auto;
-}
-
-.singleproject {
-	width: 90%;
-	margin: 1em auto 3em auto;
-	padding: 2em;
-	text-align: center;
-	background: rgba(255,255,255,0.66);
-	display: flex;
-	align-items: center;
-}
-
-.singleproject p {
-	width: 80%;
-	margin: 1em auto;
-	padding: 0;
-
-}
-
-.singleproject img {
-	max-width: 420px;
-	display: block;
-}
-
-.singleproject h4 {
-	color: #505050;
-	margin: .5em auto;
-	font-size: 1.3em;
-}
-
-.singleproject h5 {
-	width: 80%;
-	margin: .5em auto 0 auto;
-}
-
-.singleproject ul {
-	width: 80%;
-	margin: 0 auto;
-	list-style-type: none;
-}
-
-.singleproject a {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	line-height: 1.2em;
-	font-size: .8em;
-	color: #505050;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.singleproject a:hover {
-	color: #505050;
-	border-bottom: 1px solid #505050;
-}
-
-.wrapper {
-	background: rgba(255,255,255,0.55);
-	margin: 2.5em 2.5em 10em 2.5em;
-	padding: 3em;
-}
-
-.resume {
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.skills {
-	padding: 1em 10em 1em 0em;
-	width: 40%;
-	display: flex;
-}
-
-.skills-list {
-	margin: 0 2em;
-}
-
-.skills h5 {
-	margin-left: 1em;
 }
 
 /* NAVIGATION */
@@ -226,12 +144,58 @@ nav li {
 	margin-left: 25px;
 }
 
-div.text-box {
-	background-color: rgba(255,255,251,.9);
+nav ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
 }
 
 .hidden {
 	display: none;
+}
+
+
+/* Header  */
+
+div.text-box {
+	background-color: rgba(255,255,251,.9);
 }
 
 .heading-primary {
@@ -250,30 +214,6 @@ div.text-box {
   letter-spacing: 6px;
 	font-weight: 400;
 	text-align: center;
-}
-
-.icons {
-margin: 1em .2em 1em .2em;
-}
-
-.bowl {
-	animation-name: dancebowl;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-}
-
-.spoon {
-transform: rotate(175deg);
-animation-name: dancespoon;
-animation-duration: 4s;
-animation-iteration-count: infinite;
-}
-
-.measuring {
-transform: scaleX(-1);
-animation-name: dance;
-animation-duration: 4s;
-animation-iteration-count: infinite;
 }
 
 .button-container {
@@ -341,48 +281,68 @@ animation-iteration-count: infinite;
   opacity: 0;
 }
 
-/* */
-nav ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav ul li a:after,
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}
-nav ul li a:hover:after {
-  width: 100%;
+/* Portfolio */
+
+.singleproject {
+	width: 90%;
+	margin: 1em auto 3em auto;
+	padding: 2em;
+	text-align: center;
+	background: rgba(255,255,255,0.66);
+	display: flex;
+	align-items: center;
 }
 
-nav.fill ul li a {
-  transition: all 2s;
+.singleproject p {
+	width: 80%;
+	margin: 1em auto;
+	padding: 0;
 }
 
-nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
+.singleproject img {
+	max-width: 420px;
+	display: block;
 }
-nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
+
+.singleproject h4 {
+	color: #505050;
+	margin: .5em auto;
+	font-size: 1.3em;
 }
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
+
+.singleproject h5 {
+	width: 80%;
+	margin: .5em auto 0 auto;
+}
+
+.singleproject ul {
+	width: 80%;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.singleproject a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	line-height: 1.2em;
+	font-size: .8em;
+	color: #505050;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.singleproject a:hover {
+	color: #505050;
+	border-bottom: 1px solid #505050;
+}
+
+/* About */
+
+span.email a {
+	display: block;
+	margin-bottom: 1em;
+	/* font-size: 1.5em; */
+	color: #505050;
 }
 
 #contact p, i {
@@ -395,14 +355,66 @@ nav.fill ul li a:hover:after {
 	color: #505050;
 }
 
-
-span.email a {
+.about {
+	padding: 2em;
+	width: 65%;
 	display: block;
-	margin-bottom: 1em;
-	/* font-size: 1.5em; */
-	color: #505050;
+	margin: 0 auto;
 }
 
+.resume {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.skills {
+	padding: 1em 10em 1em 0em;
+	width: 40%;
+	display: flex;
+}
+
+.skills-list {
+	margin: 0 2em;
+}
+
+.skills h5 {
+	margin-left: 1em;
+}
+
+.wrapper h3 {
+	font-size: 3em;
+	display: inline-block;
+	margin: 1em auto;
+}
+
+/* Footer */
+
+.icons {
+margin: 1em .2em 1em .2em;
+}
+
+.bowl {
+	animation-name: dancebowl;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.spoon {
+	transform: rotate(175deg);
+	animation-name: dancespoon;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.measuring {
+	transform: scaleX(-1);
+	animation-name: dance;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+/* Keyframes */
 
 @keyframes dancebowl {
   0% {
