@@ -221,10 +221,10 @@ div.text-box {
 	justify-content: center;
 }
 
-.btn:hover span {display:none}
+/* .btn:hover span {display:none}
 .btn:hover:before {
 	content:"I'm available for hire!";
-}
+} */
 
 .btn:link,
 .btn:visited {
@@ -344,7 +344,7 @@ div.text-box {
 	top: -10px;
 }
 
-/* About */
+	/* About */
 
 span.email a {
 	display: block;
